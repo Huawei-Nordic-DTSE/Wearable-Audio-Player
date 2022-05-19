@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+    <Image
+        ohos:id="$+id:img_background"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:scale_mode="stretch"
+        ohos:alpha="0.4"/>
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:layout_alignment="horizontal_center">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:alignment="horizontal_center"
+            ohos:background_element="$color:player_title_bg"
+            ohos:alpha="0.7">
+
+            <Text
+                ohos:id="$+id:station_name"
+                ohos:height="match_content"
+                ohos:width="100vp"
+                ohos:text_size="16fp"
+                ohos:text_color="$color:black"
+                ohos:top_margin="25vp"
+                ohos:bottom_margin="5vp"
+                ohos:text="$string:default_title"
+                ohos:layout_alignment="horizontal_center"
+                ohos:text_alignment="horizontal_center"
+                ohos:truncation_mode="auto_scrolling"
+                ohos:auto_scrolling_count="unlimited"/>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:top_margin="5vp"
+            ohos:alignment="horizontal_center">
+
+            <Image
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:id="$+id:img_prechapter"
+                ohos:image_src="$media:previous"/>
+
+            <Text
+                ohos:id="$+id:current_chapter"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="18fp"
+                ohos:top_margin="2vp"
+                ohos:left_margin="20vp"
+                ohos:right_margin="20vp"
+                ohos:text_color="#000000"
+                ohos:text="$string:default_chapter"/>
+
+            <Image
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:id="$+id:img_nextchapter"
+                ohos:image_src="$media:next"/>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:top_margin="5vp"
+            ohos:alignment="horizontal_center">
+
+            <Text
+                ohos:id="$+id:txt_currentTime"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="12fp"
+                ohos:text="$string:default_elapsed_time"
+                ohos:text_color="$color:black"/>
+
+            <Text
+                ohos:id="$+id:txt_duration"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="12fp"
+                ohos:text="$string:default_left_time"
+                ohos:left_margin="70vp"
+                ohos:text_color="$color:black"/>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:id="$+id:layout_player_btn"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:alignment="horizontal_center">
+
+            <Image
+                ohos:id="$+id:btn_skipback"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:top_margin="7vp"
+                ohos:image_src="$media:skipback"/>
+
+            <Image
+                ohos:id="$+id:img_pause_resume_btn"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:left_margin="20vp"
+                ohos:right_margin="20vp"
+                ohos:image_src="$media:ic_play_button"/>
+
+            <Image
+                ohos:id="$+id:btn_skipfwd"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:top_margin="7vp"
+                ohos:image_src="$media:skipforward"/>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:orientation="horizontal"
+            ohos:alignment="horizontal_center">
+
+            <Image
+                ohos:id="$+id:img_vol_decrease"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:image_src="$media:volume_quiet"/>
+
+            <ProgressBar
+                ohos:id="$+id:progressbar_volume"
+                ohos:height="10vp"
+                ohos:width="100vp"
+                ohos:progress_width="20"
+                ohos:top_margin="11vp"
+                ohos:left_margin="0vp"
+                ohos:right_margin="10vp"
+                ohos:max="5"
+                ohos:min="0"
+                ohos:progress="2"
+                ohos:progress_color="$color:black"/>
+
+            <Image
+                ohos:id="$+id:img_vol_increase"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:image_src="$media:volume_loud"/>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:orientation="horizontal"
+            ohos:top_margin="5vp"
+            ohos:alignment="horizontal_center">
+
+            <Image
+                ohos:id="$+id:btn_minusSpeed"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:top_margin="6vp"
+                ohos:image_src="$media:minusspeed"/>
+
+            <Text
+                ohos:id="$+id:txt_speed"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="18fp"
+                ohos:left_margin="10vp"
+                ohos:right_margin="10vp"
+                ohos:text_color="$color:black"
+                ohos:text="$string:default_speed"/>
+
+            <Image
+                ohos:id="$+id:btn_plusSpeed"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:top_margin="6vp"
+                ohos:image_src="$media:plusspeed"/>
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+    <RoundProgressBar
+        ohos:id="$+id:round_progress_bar"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:progress_width="10vp"
+        ohos:progress="20"
+        ohos:progress_color="$color:player_progress_bar"/>
+</StackLayout>

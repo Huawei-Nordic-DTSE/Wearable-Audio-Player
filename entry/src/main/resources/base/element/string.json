@@ -1,0 +1,56 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "Audio Player"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "username_hint",
+      "value": "Phone Number"
+    },
+    {
+      "name": "password_hint",
+      "value": "Password"
+    },
+    {
+      "name": "login_btn",
+      "value": "LOGIN"
+    },
+    {
+      "name": "default_title",
+      "value": "Pystyyn kuollut kaisanieminen"
+    },
+    {
+      "name": "default_chapter",
+      "value": "1/7"
+    },
+    {
+      "name": "default_elapsed_time",
+      "value": "00:00:12"
+    },
+    {
+      "name": "default_left_time",
+      "value": "-08:27:46"
+    },
+    {
+      "name": "default_speed",
+      "value": "x1.0"
+    },
+    {
+      "name": "bookListTitle",
+      "value": "Bookshelf"
+    },
+    {
+      "name": "label",
+      "value": "Audio Player"
+    },
+    {
+      "name": "playing",
+      "value": "Playing..."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+apply plugin: 'com.huawei.ohos.hap'
+apply plugin: 'com.huawei.ohos.decctest'
+//For instructions on signature configuration, see https://developer.harmonyos.com/en/docs/documentation/doc-guides/ide_debug_device-0000001053822404#EN-US_TOPIC_0000001154985555__section1112183053510
+ohos {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\dwx515244\\.ohos\\config\\auto_debug_70358000000048801.p12')
+            storePassword '000000180CEF0EB7FCB30D9C8A81F716A2AF7F7D4AE42C3DABA22A4D1C9B7A2D3AC9419777768DB0'
+            keyAlias = 'debugKey'
+            keyPassword '0000001879A9BEE89A6D555351464079D191C63D325EF6FF0263C23115AE3E392CC83DD1C5B64610'
+            signAlg = 'SHA256withECDSA'
+            profile file('C:\\Users\\dwx515244\\.ohos\\config\\auto_debug_player_70358000000048801.p7b')
+            certpath file('C:\\Users\\dwx515244\\.ohos\\config\\auto_debug_70358000000048801.cer')
+        }
+    }
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 4
+    }
+    buildTypes {
+        release {
+            proguardOpt {
+                proguardEnabled false
+                rulesFiles 'proguard-rules.pro'
+            }
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
+    testImplementation 'junit:junit:4.13'
+    ohosTestImplementation 'com.huawei.ohos.testkit:runner:1.0.0.100'
+
+    implementation 'io.openharmony.tpc.thirdlib:ohos-Universal-Image-Loader:1.0.2'
+    implementation 'io.openharmony.tpc.thirdlib:circleimageview:1.0.0'
+    implementation 'io.openharmony.tpc.thirdlib:ohos-SpinKit:1.0.1'
+}
+decc {
+    supportType = ['html', 'xml']
+}

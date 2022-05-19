@@ -1,0 +1,36 @@
+{
+  "color": [
+    {
+      "name": "login_slice_bg",
+      "value": "#FFE1E2DE"
+    },
+    {
+      "name": "white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "player_title_bg",
+      "value": "#726c6c"
+    },
+    {
+      "name": "player_progress_bar",
+      "value": "#0019AF"
+    },
+    {
+      "name": "login_btn_bg",
+      "value": "#0019AF"
+    },
+    {
+      "name": "toast_bg",
+      "value": "#66808080"
+    },
+    {
+      "name": "book_list_title_bg",
+      "value": "#0019AF"
+    }
+  ]
+}

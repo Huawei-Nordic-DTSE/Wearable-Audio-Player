@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:main_layout"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:layout_alignment="center"
+    ohos:background_element="$color:black">
+
+    <ListContainer
+        ohos:id="$+id:list_container"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:top_margin="40vp"
+        ohos:bottom_margin="40vp"
+        ohos:layout_alignment="horizontal_center"
+        ohos:background_element="$color:black"
+        ohos:scrollbar_fading_delay="1000"/>
+
+    <DirectionalLayout
+        ohos:height="40vp"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:alignment="vertical_center"
+        ohos:layout_alignment="horizontal_center"
+        ohos:background_element="$color:white">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text_color="$color:book_list_title_bg"
+            ohos:top_margin="7vp"
+            ohos:text="$string:bookListTitle"
+            ohos:text_alignment="horizontal_center"
+            ohos:text_size="18fp"
+            ohos:text_weight="800"/>
+    </DirectionalLayout>
+
+    <Image
+        ohos:id="$+id:image_retry"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:image_src="$media:ic_retry"
+        ohos:padding="90vp"
+        ohos:visibility="hide"/>
+
+    <DirectionalLayout
+        ohos:id="$+id:layout_play_status"
+        ohos:height="40vp"
+        ohos:width="match_parent"
+        ohos:top_margin="193vp"
+        ohos:orientation="horizontal"
+        ohos:alignment="horizontal_center"
+        ohos:layout_alignment="horizontal_center"
+        ohos:visibility="hide"
+        ohos:background_element="$color:white">
+
+        <Text
+            ohos:id="$+id:text_playing_book"
+            ohos:height="match_content"
+            ohos:width="95vp"
+            ohos:top_margin="5vp"
+            ohos:text_color="$color:black"
+            ohos:text="$string:playing"
+            ohos:truncation_mode="auto_scrolling"
+            ohos:text_alignment="horizontal_center"
+            ohos:text_size="13fp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            ohos:height="22vp"
+            ohos:width="22vp"
+            ohos:left_margin="5vp"
+            ohos:top_margin="2vp"
+            ohos:image_src="$media:ic_pause_button"/>
+    </DirectionalLayout>
+
+    <ProgressBar
+        ohos:id="$+id:progress_bar"
+        ohos:top_margin="100vp"
+        ohos:left_margin="90vp"
+        ohos:height="53vp"
+        ohos:width="53vp"
+        ohos:visibility="hide"/>
+</StackLayout>
